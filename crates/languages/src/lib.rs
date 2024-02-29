@@ -97,6 +97,7 @@ pub fn init(
         ("markdown", tree_sitter_markdown::language()),
         ("nix", tree_sitter_nix::language()),
         ("nu", tree_sitter_nu::language()),
+        ("objc", tree_sitter_objc::language()),
         ("ocaml", tree_sitter_ocaml::language_ocaml()),
         (
             "ocaml_interface",
@@ -326,6 +327,7 @@ pub fn init(
         ))],
     );
     language("dart", vec![Arc::new(dart::DartLanguageServer {})]);
+    language("objc", vec![Arc::new(c::CLspAdapter)]);
 }
 
 #[cfg(any(test, feature = "test-support"))]

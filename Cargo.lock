@@ -4965,6 +4965,7 @@ dependencies = [
  "tree-sitter-markdown",
  "tree-sitter-nix",
  "tree-sitter-nu",
+ "tree-sitter-objc",
  "tree-sitter-ocaml",
  "tree-sitter-php",
  "tree-sitter-prisma-io",
@@ -10058,6 +10059,15 @@ dependencies = [
 name = "tree-sitter-nu"
 version = "0.0.1"
 source = "git+https://github.com/nushell/tree-sitter-nu?rev=7dd29f9616822e5fc259f5b4ae6c4ded9a71a132#7dd29f9616822e5fc259f5b4ae6c4ded9a71a132"
+dependencies = [
+ "cc",
+ "tree-sitter",
+]
+
+[[package]]
+name = "tree-sitter-objc"
+version = "0.0.1"
+source = "git+https://github.com/cbracken/tree-sitter-objc?rev=e43a0b1001a37f15192dd32c0af0a941ef6ffb3d#e43a0b1001a37f15192dd32c0af0a941ef6ffb3d"
 dependencies = [
  "cc",
  "tree-sitter",
